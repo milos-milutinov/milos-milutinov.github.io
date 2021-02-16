@@ -1,0 +1,17 @@
+.insert-car-form {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+   
+    height: 600px;
+    width: 800px;
+}
+
+.insert-car-div{
+    width: 300px;
+}
+
+#car-button{
+    width: 300px;
+}

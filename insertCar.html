@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style/userStyle.css" />
+    <link rel="stylesheet" href="./style/insertCar.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <!-- LOGO START -->
+            <div class="logo">
+                <img src="img/banner.png" alt="Logo failed to load" />
+            </div>
+            <!-- LOGO END -->
+            <!-- SOCIAL START -->
+            <div class="socialNetworks">
+                <img src="img/youtube.png" alt="Social" />
+                <img src="img/instagram.png" alt="Social" />
+                <img src="img/twitter.png" alt="Social" />
+                <img src="img/facebook.png" alt="Social" />
+            </div>
+            <!-- SOCIAL END -->
+            <!-- NAV MENU START -->
+            <div class="navMenu">
+                <div id="logged" class="btn">USERNAME</div>
+                <div id="logout" class="btn">Log out</div>
+            </div>
+            <!-- NAV MENU END -->
+        </header>
+        <!-- FORM START -->
+
+        <form class="delete" id="logInForm" novalidate>
+            <div class="error" id="error"></div>
+            <div class="form-group">
+                <label for="id_log"> Username </label>
+                <input id="id_log" type="text" name="id_log" maxlength="8" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="id_pass"> Password </label>
+                <input id="id_pass" type="password" name="id_pass" maxlength="15" class="form-control" />
+            </div>
+            <div class="form-group text-center">
+                <input value="Log in" type="submit" class="btn btn-default btn-md" id="login_log" />
+                <input value="Cancel" type="reset" class="btn btn-default btn-md" id="reset_log" />
+            </div>
+        </form>
+        <form id="registration" class="delete" novalidate>
+            <div class="error" id="error1"></div>
+            <div class="form-group">
+                <label for="name_reg"> Your name </label>
+                <input id="name_reg" type="text" name="name_reg" maxlength="15" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="email"> Your e-mail</label>
+                <input id="email" type="email" name="email" placeholder="example@gmail.com" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="id_reg"> Username </label>
+                <input id="id_reg" type="text" name="id_reg" maxlength="8" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="reg_pass"> Password </label>
+                <input id="reg_pass" type="password" name="reg_pass" maxlength="15" class="form-control" />
+            </div>
+            <div class="form-group text-center">
+                <input value="Register" type="submit" class="btn btn-default btn-md" id="register_reg" />
+                <input value="Cancel" type="reset" class="btn btn-default btn-md" id="reset_reg" />
+            </div>
+        </form>
+        <!-- FORM END -->
+
+    </div>
+    </div>
+
+    <div class="insert-car-form">
+
+        <div class="insert-car-div">
+            <label>Insert car brand</label>
+            <input type="text" id="car-brand-input">
+        </div>
+
+        <div class="insert-car-div">
+            <label>Insert car creation year</label>
+            <input type="number" id="car-year-input">
+        </div>
+
+        <div class="insert-car-div">
+            <label>Insert car image url</label>
+            <input type="text" id="car-url-input">
+        </div>
+
+        <button id="car-button" onclick="insertCar()">Insert car</button>
+
+    </div>
+    <script src="./script/localStorageManipulation.js"></script>
+    <script src="./script/userInterface.js"></script>
+    <script src="./script/main.js"></script>
+</body>
+
+</html>

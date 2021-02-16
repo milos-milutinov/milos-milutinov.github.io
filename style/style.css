@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "dodger";
+  src: url("../fonts/Dodgv2c.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 14px;
+  font-family: "dodger";
+}
+
+#wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* HEADER start */
+
+#header {
+  display: flex;
+  justify-content: space-evenly;
+  height: 4em;
+  background-color: #444444;
+}
+
+.logo img {
+  max-height: 4em;
+}
+
+.socialNetworks img {
+  max-height: 4em;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navMenu div {
+  cursor: pointer;
+}
+
+#login {
+  background-color: lightblue;
+  padding: 0.9em;
+}
+
+
+
+#register {
+  padding: 0.9em;
+  background-color: #ffc400;
+}
+
+.btn {
+  display: initial;
+}
+
+.btn-delete {
+  display: none;
+}
+
+/* Login */
+
+#delete,
+.delete,
+.remove {
+  display: none;
+}
+
+#show,
+.show {
+  display: initial;
+}
+
+.logging {
+  padding: 2em;
+  display: initial;
+}
+
+#error,
+#error1,
+.error {
+  padding: 1em;
+  color: red;
+}
+
+.form-group {
+  padding: 0.5em;
+}
+
+/* Registration */
+
+/* HEADER end */
+
+/* Cover photo*/
+
+#cover {
+  background-image: url("../img/cover/first-car.jpg");
+  height: 50em;
+  display: flex;
+  align-items: center;
+}
+
+#textContainer {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover-header {
+  color: #ffffffe3;
+}
+
+.cover-description {
+  color: #ffffffe3;
+  width: 60%;
+}
+
+/* END OF Cover photo */
+
+/* Car cards */
+
+.car-image{
+  width: 15em;
+  height: 5em;
+  background-color: blue;
+  color: #ffffff;
+}
+
+.car-name{
+  height: 5em;
+  background-color: #444444;
+  color: #ffffff;
+}
+.car-year{
+  height: 5em;
+  background-color: red;
+  color: #ffffff;
+}

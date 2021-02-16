@@ -1,0 +1,60 @@
+{
+    "cars": [
+        {
+            "id": 1,
+            "brand": "Mercedes",
+            "year": 1993,
+            "kilometers": 330.312,
+            "price": 3.000,
+            "url" : "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        },
+        {
+            "id": 2,
+            "brand": "Audi",
+            "year": 2012,
+            "kilometers": 180.253,
+            "price": 13.000,
+            "url" : "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        },
+        {
+            "id": 3,
+            "brand": "Audi",
+            "year": 2016,
+            "kilometers": 120.431,
+            "price": 23.000,
+            "url" : "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        },
+        {
+            "id": 4,
+            "brand": "BMW",
+            "year": 2007,
+            "kilometers": 183.512,
+            "price": 15.000,
+            "url" : "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        },
+        {
+            "id": 5,
+            "brand": "Volvo",
+            "year": 2012,
+            "kilometers": 220.112,
+            "price": 29.000,
+            "url" : "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        },
+        {
+            "id": 6,
+            "brand": "Subaru",
+            "year": 1990,
+            "kilometers": 250.981,
+            "price": 3.500,
+            "url" : "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        },
+        {
+            "id": 7,
+            "brand": "Citroen",
+            "year": 2018,
+            "kilometers": 130.982,
+            "price": 8.000,
+            "url" : "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        }
+    ]
+}
