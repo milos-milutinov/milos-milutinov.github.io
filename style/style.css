@@ -129,22 +129,5 @@ body {
 
 /* END OF Cover photo */
 
-/* Car cards */
 
-.car-image{
-  width: 15em;
-  height: 5em;
-  background-color: blue;
-  color: #ffffff;
-}
 
-.car-name{
-  height: 5em;
-  background-color: #444444;
-  color: #ffffff;
-}
-.car-year{
-  height: 5em;
-  background-color: red;
-  color: #ffffff;
-}

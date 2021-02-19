@@ -1,6 +1,7 @@
 /* funkcija koja kreira div sa potrebnim podacima */
 
 var getCurrentWrapper = document.getElementById("wrapper");
+var allCars = document.getElementById("allCars");
 
 function createCarNameElement(brand) {
   var carNameElement = document.createElement("p");
@@ -25,6 +26,7 @@ function createCarImageElement(imageUrl) {
 
 function createCar(imageUrl, brand, year) {
   var carDiv = document.createElement("div");
+  carDiv.setAttribute("class","car");
   var image = createCarImageElement(imageUrl);
   carDiv.append(image);
   var carName = createCarNameElement(brand);
@@ -37,7 +39,7 @@ function createCar(imageUrl, brand, year) {
 
 function createCarElement(car) {
   var car = createCar(car.url, car.brand, car.year);
-  getCurrentWrapper.append(car[3]);
+  allCars.append(car[3]);
 }
 
 function callFetch() {

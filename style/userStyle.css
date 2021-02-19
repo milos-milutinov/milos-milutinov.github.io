@@ -11,7 +11,7 @@
   
   body {
     font-size: 14px;
-    font-family: "dodger";
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   #wrapper {
@@ -98,5 +98,52 @@
   /* HEADER end */
   
 
-  
-  
+  /* Car cards */
+
+#allCars{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.car img{
+  width: 30em;
+}
+
+.offerHeader {
+  position: relative;
+  top: 8em;
+  color: white;
+}
+.offerText{
+  position: relative;
+  top: 20em;
+  color: white;
+}
+
+#desc img{
+  margin-bottom: 2em;
+}
+
+.addCar{
+  margin: 2em;
+  width: 30%;
+  height: 2em;
+  background-color: #ffc400;
+  cursor: pointer;
+  position: relative;
+  left: 35%;
+}
+
+.addCar p{
+  position: relative;
+  top: 20%;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+.addCar p a{
+  text-decoration: none;
+  color: white;
+}
