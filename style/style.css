@@ -93,9 +93,13 @@ body {
   color: red;
 }
 
+
+
 .form-group {
-  padding: 0.5em;
+  padding: 0.5em 0 0.5em 0;
 }
+
+
 
 /* Registration */
 
@@ -105,6 +109,8 @@ body {
 
 #cover {
   background-image: url("../img/cover/first-car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   height: 50em;
   display: flex;
   align-items: center;

@@ -30,5 +30,5 @@ function insertCar() {
         url
     }
     saveCarToLocalStorage(car);
-    alert("Car saved in local storage");
+    alert("Your car is successfully added");
 }
