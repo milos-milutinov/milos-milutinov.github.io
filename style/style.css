@@ -53,8 +53,6 @@ body {
   padding: 0.9em;
 }
 
-
-
 #register {
   padding: 0.9em;
   background-color: #ffc400;
@@ -93,13 +91,9 @@ body {
   color: red;
 }
 
-
-
 .form-group {
   padding: 0.5em 0 0.5em 0;
 }
-
-
 
 /* Registration */
 
@@ -133,7 +127,36 @@ body {
   width: 60%;
 }
 
+#desc {
+  background-image: url(../img/cover/second-car.jpg);
+  background-position: center;
+  height: 50em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
 /* END OF Cover photo */
 
+/* RESPONSIVE */
 
+@media screen and (max-width: 1640px) {
+  #allCars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
 
+@media screen and (max-width: 1088px) {
+  #allCars {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .socialNetworks {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}

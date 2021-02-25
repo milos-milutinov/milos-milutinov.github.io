@@ -1,3 +1,9 @@
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .insert-car-form {
     display: flex;
     flex-direction: column;
@@ -40,4 +46,9 @@
     border-radius: 1em;
     color: #fff ;
     margin-top: 5em;
+}
+
+#yourCars{
+    text-decoration: none;
+    color: lightblue;
 }

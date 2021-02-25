@@ -107,6 +107,16 @@ body {
 
 /* HEADER end */
 
+/* Description */
+
+#desc {
+  background-image: url(../img/cover/second-car.jpg);
+  background-position: center;
+  height: 50em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
 /* Car cards */
 
 #allCars {
@@ -131,12 +141,8 @@ body {
   color: white;
 }
 
-#desc {
-  background-image: url(../img/cover/second-car.jpg);
-  background-position: center;
-  height: 50em;
-  margin-top: 3em;
-  margin-bottom: 3em;
+#desc img {
+  margin-bottom: 2em;
 }
 
 .addCar {
@@ -161,8 +167,6 @@ body {
   text-decoration: none;
   color: white;
 }
-
-/* END OF Car Cards */
 
 /* RESPONSIVE */
 
