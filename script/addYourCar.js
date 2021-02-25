@@ -10,7 +10,7 @@ function saveCarToLocalStorage(car) {
   let cars = getCarsFromLocalStorage();
   if (cars !== null) {
     cars.push(car);
-    localStorage.setItem("cars", JSON.stringify(cars));
+    localStorage.setItem("cars", JSON.stringify(cars));/* PITANJE */
   } else {
     localStorage.setItem("cars", JSON.stringify([car]));
   }
