@@ -54,6 +54,7 @@ body {
   padding: 0.9em;
   background-color: #ffc400;
   cursor: pointer;
+  border-radius: 0.5em;
 }
 
 .btn {
@@ -113,7 +114,6 @@ body {
   background-image: url(../img/cover/second-car.jpg);
   background-position: center;
   height: 50em;
-  margin-top: 3em;
   margin-bottom: 3em;
 }
 
