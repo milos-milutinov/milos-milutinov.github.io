@@ -1,103 +1,100 @@
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
 .insert-car-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url(../img/cover/third-car.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../img/cover/third-car.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.insert-car-div{
-    padding: 1em;
-    color: #ffffff;
-    height: 5em;
-    text-align: center;
+.insert-car-div {
+  padding: 1em;
+  color: #ffffff;
+  height: 5em;
+  text-align: center;
 }
 
-.insert-car-div input{
-    margin-top: 0.2em;
-    border: none;
-    outline: none;
-    border-radius: 1em;
-    font-size: 1.5em;
-    height: 2em;
-    width: 25em;
-    text-align: center;
+.insert-car-div input {
+  margin-top: 0.2em;
+  border: none;
+  outline: none;
+  border-radius: 1em;
+  font-size: 1.5em;
+  height: 2em;
+  width: 25em;
+  text-align: center;
 }
 
-#car-button{
-    width: 7em;
-    height: 2em;
-    background-color: #ffc400;
-    border: none;
-    border-radius: 1em;
-    color: #fff ;
-    margin-top: 5em;
+#car-button {
+  width: 7em;
+  height: 2em;
+  background-color: #ffc400;
+  border: none;
+  border-radius: 1em;
+  color: #fff;
+  margin-top: 5em;
 }
 
-#yourCars{
-    text-decoration: none;
-    color: lightblue;
+#yourCars {
+  text-decoration: none;
+  color: lightblue;
 }
 
 /* RESPONSIVE */
 
 @media screen and (max-width: 1640px) {
-    #allCars {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
+  #allCars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
-  
-  @media screen and (max-width: 1088px) {
-    #allCars {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px;
-    }
-    .socialNetworks {
-      display: none;
-    }
-    .logo {
-      display: none;
-    }
-    .insert-car-form{
-        width: 100%;
-    }
+}
+
+@media screen and (max-width: 1088px) {
+  #allCars {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
-
-  @media screen and (max-width: 445px) {
-
-    #wrapper{
-      width: 100%;
-      border: none;
-    }
-    #allCars {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px;
-    }
-    .socialNetworks {
-      display: none;
-    }
-    .logo {
-      display: none;
-    }
-    .insert-car-form{
-        width: 100%;
-    }
-
+  .socialNetworks {
+    display: none;
   }
+  .logo {
+    display: none;
+  }
+  .insert-car-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #wrapper {
+    width: 100%;
+    border: none;
+  }
+  #allCars {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .socialNetworks {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .insert-car-form {
+    width: 100%;
+  }
+}

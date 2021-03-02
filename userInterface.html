@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cars</title>
-  <link rel="icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style/userStyle.css" />
+  </head>
 
-  <link rel="stylesheet" href="style/userStyle.css" />
-</head>
+  <body>
+    <a href="nesto.html" id="nesto"></a>
+    <div id="wrapper">
+      <header id="header">
+        <!-- LOGO START -->
+        <div class="logo">
+          <img src="img/banner.png" alt="Logo failed to load" />
+        </div>
+        <!-- LOGO END -->
+        <!-- SOCIAL START -->
+        <div class="socialNetworks">
+          <img src="img/youtube.png" alt="Social" />
+          <img src="img/instagram.png" alt="Social" />
+          <img src="img/twitter.png" alt="Social" />
+          <img src="img/facebook.png" alt="Social" />
+        </div>
+        <!-- SOCIAL END -->
+        <!-- NAV MENU START -->
+        <div class="navMenu">
+          <div id="home">
+            <a href="userInterface.html" id="loggedLink">Home</a>
+          </div>
+          <div id="logged" class="btn">
+            <a id="yourCars" href="yourCars.html"></a>
+          </div>
+          <div id="logout" class="btn">Log out</div>
+        </div>
+        <!-- NAV MENU END -->
+      </header>
 
-<body>
+      <!-- Description -->
 
-  <a href="nesto.html" id="nesto"></a>
-  <div id="wrapper">
-    <header id="header">
-      <!-- LOGO START -->
-      <div class="logo">
-        <img src="img/banner.png" alt="Logo failed to load" />
+      <div id="desc">
+        <h1 class="offerHeader">Look at our offer</h1>
+        <p class="offerText">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+          fuga earum debitis velit incidunt numquam ipsum at dolor perferendis
+          aut, tempore assumenda laboriosam quod id sunt, commodi ratione iste
+          accusantium.
+        </p>
       </div>
-      <!-- LOGO END -->
-      <!-- SOCIAL START -->
-      <div class="socialNetworks">
-        <img src="img/youtube.png" alt="Social" />
-        <img src="img/instagram.png" alt="Social" />
-        <img src="img/twitter.png" alt="Social" />
-        <img src="img/facebook.png" alt="Social" />
-      </div>
-      <!-- SOCIAL END -->
-      <!-- NAV MENU START -->
-      <div class="navMenu">
-        <div id="home"><a href="userInterface.html" id="loggedLink">Home</a></div>
-        <div id="logged" class="btn"><a id="yourCars" href="yourCars.html"></a></div>
-        <div id="logout" class="btn">Log out</div>
-      </div>
-      <!-- NAV MENU END -->
-    </header>
 
-    <!-- Description -->
+      <!-- Description END -->
 
-    <div id="desc">
-      <h1 class="offerHeader">Look at our offer</h1>
-      <p class="offerText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga earum debitis velit incidunt numquam ipsum at dolor perferendis aut, tempore assumenda laboriosam quod id sunt, commodi ratione iste accusantium.</p>
+      <div id="allCars"></div>
+
+      <div class="addCar">
+        <p><a href="insertCar.html">Add your own car for sale</a></p>
+      </div>
     </div>
-
-    <!-- Description END -->    
-
-    <div id="allCars"></div>
-
-    <div class="addCar">
-      <p><a href="insertCar.html">Add your own car for sale</a></p>
-    </div>
-  </div>
-  <script src="./script/domManipulation.js"></script>
-  <script src="./script/validateCredentials.js"></script>
-  <script src="./script/addYourCar.js"></script>
-  <script src="./script/userInterface.js"></script>
-  <script src="./script/main.js"></script>
-</body>
-
+    <script src="./script/domManipulation.js"></script>
+    <script src="./script/validateCredentials.js"></script>
+    <script src="./script/addYourCar.js"></script>
+    <script src="./script/userInterface.js"></script>
+    <script src="./script/main.js"></script>
+  </body>
 </html>

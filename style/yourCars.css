@@ -145,27 +145,8 @@ body {
   margin-bottom: 2em;
 }
 
-.addCar {
-  margin: 2em;
-  width: 30%;
-  height: 2em;
-  background-color: #ffc400;
-  cursor: pointer;
-  position: relative;
-  left: 35%;
-}
-
-.addCar p {
-  position: relative;
-  top: 20%;
-  text-align: center;
-  align-items: center;
-  color: white;
-}
-
-.addCar p a {
-  text-decoration: none;
-  color: white;
+.yourCarsDesc {
+  margin: 2em 0;
 }
 
 /* RESPONSIVE */
