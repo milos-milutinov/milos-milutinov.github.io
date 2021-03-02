@@ -172,3 +172,31 @@ body {
     display: none;
   }
 }
+
+@media screen and (max-width: 445px) {
+  #wrapper {
+    width: 100%;
+    border: none;
+  }
+  #allCars {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .socialNetworks {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .car img {
+    width: 15em;
+    height: 10em;
+  }
+}
+
+@media screen and (max-width: 1088px){
+  #wrapper{
+    width: 100%;
+  }
+}

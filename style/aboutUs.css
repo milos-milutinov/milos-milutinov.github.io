@@ -137,8 +137,7 @@ body {
 
 /* END OF Cover photo */
 /* Articles */
-
-#home :nth-child(odd) {
+#about :nth-last-child(even) {
   background-color: #444444;
   color: #ffffffe3;
 }
@@ -149,56 +148,111 @@ body {
   align-items: center;
 }
 
-.articleTwo{
+.articleTwo {
   flex-direction: row-reverse;
 }
 
-.article img{
+.article img {
   max-width: 40em;
   height: 35em;
 }
 
 /* END of Articles */
 
-/* About Us */
+/* Contact information */
+#contact {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #000;
+  color: #ffffff;
 
-  #aboutUs{
-    margin: 5em;
-  }
-  #aboutUs button{
-    background-color: #ffc400;
-    border: none;
-    color: #ffffffe3;
-    padding: 1em 3em;
-    border-radius: 0.5em;
-    cursor: pointer;
-  }
+}
 
-/* END OF About Us */
+#map h3{
+    margin: 2em;
+}
+
+#map iframe{
+    margin-bottom: 2em;
+    border-radius: 1em;
+    width: 30em;
+    height: 15em;
+}
+
+#contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contactInfo h3{
+    margin: 2em;
+}
+
+#contactInfo ul{
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 15%;
+}
+
+#contactInfo ul li{
+    padding: 1.5em;
+}
+
+#contactInfo ul li p{
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0.1em;
+}
+
+
+/* END OF Contact information */
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1400px){
-  .article{
+@media screen and (max-width: 1400px) {
+  .article {
     flex-direction: column;
   }
-  .article img{
+  .article img {
     margin: 2em 0;
   }
-  .article p{
+  .article p {
     max-width: 55em;
   }
 }
 
 @media screen and (max-width: 900px) {
-  #wrapper {
-    width: 100%;
-    border: none;
+    #wrapper {
+      width: 100%;
+      border: none;
+    }
+    .socialNetworks {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
   }
-  .socialNetworks {
-    display: none;
-  }
-  .logo {
-    display: none;
-  }
+
+@media screen and (max-width: 840px){
+    #contact{
+        flex-direction: column;
+    }
+    #contactInfo ul{
+        justify-content: center;
+        list-style-type: none;
+    }
+    #contactInfo ul li{
+        padding: 0.5em;
+    }
+}
+
+@media screen and (max-width: 470px){
+    #map iframe{
+        margin-bottom: 2em;
+        border-radius: 1em;
+        max-width: 50vw;
+        max-height: 15em;
+    }
 }

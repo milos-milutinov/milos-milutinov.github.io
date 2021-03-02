@@ -231,3 +231,9 @@ body {
     top: 30%;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .addCar p {
+    top: 13%;
+  }
+}
