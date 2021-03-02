@@ -53,9 +53,35 @@ body {
   padding: 0.9em;
 }
 
+#login_log {
+  background-color: lightblue;
+  border: none;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  outline-style: none;
+  cursor: pointer;
+}
+#reset_log {
+  background-color: #ffc400;
+  border: none;
+  padding: 0.3em;
+  margin: 1.5em;
+  border-radius: 0.5em;
+  outline-style: none;
+  cursor: pointer;
+}
+
 #register {
   padding: 0.9em;
   background-color: #ffc400;
+}
+#register_reg {
+  background-color: lightblue;
+  border: none;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  outline-style: none;
+  cursor: pointer;
 }
 
 .btn {
@@ -93,7 +119,15 @@ body {
 
 .form-group {
   padding: 0.5em 0 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+.form-group input{
+  outline: none;
+}
+
 
 /* Registration */
 
@@ -255,16 +289,16 @@ body {
   }
 }
 
-@media screen and (max-width: 840px){
-  #contact{
-      flex-direction: column;
+@media screen and (max-width: 840px) {
+  #contact {
+    flex-direction: column;
   }
-  #contactInfo ul{
-      justify-content: center;
-      list-style-type: none;
+  #contactInfo ul {
+    justify-content: center;
+    list-style-type: none;
   }
-  #contactInfo ul li{
-      padding: 0.5em;
+  #contactInfo ul li {
+    padding: 0.5em;
   }
   #aboutUs {
     background-color: #444444;
@@ -272,11 +306,11 @@ body {
   }
 }
 
-@media screen and (max-width: 470px){
-  #map iframe{
-      margin-bottom: 2em;
-      border-radius: 1em;
-      max-width: 50vw;
-      max-height: 15em;
+@media screen and (max-width: 470px) {
+  #map iframe {
+    margin-bottom: 2em;
+    border-radius: 1em;
+    max-width: 50vw;
+    max-height: 15em;
   }
 }

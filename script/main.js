@@ -215,7 +215,7 @@ function loginFormElementOnSubmit() {
         user[i].user_name === user_name &&
         user[i].password !== password
       ) {
-        errorMSG.textContent = "Email or password is not correct";
+        errorMSG.textContent = "Password is not correct";
         return;
       }
     } else {
