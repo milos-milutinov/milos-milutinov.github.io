@@ -10,12 +10,11 @@ function saveCarToLocalStorage(car) {
   let cars = getCarsFromLocalStorage();
   if (cars !== null) {
     cars.push(car);
-    localStorage.setItem("cars", JSON.stringify(cars));/* PITANJE */
+    localStorage.setItem("cars", JSON.stringify(cars));
   } else {
     localStorage.setItem("cars", JSON.stringify([car]));
   }
 }
-
 function insertCar() {
   let brand = document.getElementById("car-brand-input").value;
   let year = document.getElementById("car-year-input").value;
