@@ -26,7 +26,7 @@ function createCarImageElement(imageUrl) {
 
 function createCar(imageUrl, brand, year) {
   var carDiv = document.createElement("div");
-  carDiv.setAttribute("class","car");
+  carDiv.setAttribute("class", "car");
   var image = createCarImageElement(imageUrl);
   carDiv.append(image);
   var carName = createCarNameElement(brand);
@@ -59,3 +59,16 @@ function callFetch() {
 }
 
 callFetch();
+
+function deleteCar() {
+  var selectedCar = JSON.parse(localStorage.getItem("cars"));
+  for(var i = 0; i<selectedCar.length;i++){
+    var selectedCar = JSON.parse(selectedCar[i]);
+    var cars = createCarElement();
+    if(selectedCar.brand == cars.brand){
+      selectedCar.splice(i, 1);
+    }
+  }
+
+  return selectedCar;
+}
