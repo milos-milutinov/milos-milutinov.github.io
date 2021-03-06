@@ -29,6 +29,7 @@ function insertCar() {
   };
   saveCarToLocalStorage(car);
   alert("Your car is successfully added");
+  location.reload();
 }
 
 

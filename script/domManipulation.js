@@ -60,15 +60,3 @@ function callFetch() {
 
 callFetch();
 
-function deleteCar() {
-  var selectedCar = JSON.parse(localStorage.getItem("cars"));
-  for(var i = 0; i<selectedCar.length;i++){
-    var selectedCar = JSON.parse(selectedCar[i]);
-    var cars = createCarElement();
-    if(selectedCar.brand == cars.brand){
-      selectedCar.splice(i, 1);
-    }
-  }
-
-  return selectedCar;
-}
