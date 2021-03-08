@@ -149,16 +149,14 @@ body {
   margin: 2em 0;
 }
 
-#filterYear{
-
+#filterYear {
   border: none;
   background-color: red;
-  color:#ffffff;
+  color: #ffffff;
   padding: 1em;
   cursor: pointer;
   border-radius: 0.5em;
   margin: 0.5em;
-
 }
 
 /* Contact info */
@@ -211,7 +209,7 @@ body {
 /* RESPONSIVE */
 
 @media screen and (max-width: 1640px) {
-  #wrapper{
+  #wrapper {
     width: 100%;
     border: none;
   }
@@ -223,7 +221,7 @@ body {
 }
 
 @media screen and (max-width: 1088px) {
-  #wrapper{
+  #wrapper {
     width: 100%;
   }
   #allCars {
@@ -262,6 +260,15 @@ body {
 
   .addCar p {
     top: 30%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #map iframe {
+    margin-bottom: 2em;
+    border-radius: 1em;
+    max-width: 50vw;
+    max-height: 15em;
   }
 }
 

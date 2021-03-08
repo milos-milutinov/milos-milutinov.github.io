@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cars</title>
     <link rel="icon" href="img/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style/userStyle.css" />
-    <link rel="stylesheet" href="./style/insertCar.css">
-</head>
+    <link rel="stylesheet" href="./style/insertCar.css" />
+  </head>
 
-<body>
+  <body>
     <div id="wrapper">
-        <header id="header">
-            <!-- LOGO START -->
-            <div class="logo">
-                <img src="img/banner.png" alt="Logo failed to load" />
-            </div>
-            <!-- LOGO END -->
-            <!-- SOCIAL START -->
-            <div class="socialNetworks">
-                <img src="img/youtube.png" alt="Social" />
-                <img src="img/instagram.png" alt="Social" />
-                <img src="img/twitter.png" alt="Social" />
-                <img src="img/facebook.png" alt="Social" />
-            </div>
-            <!-- SOCIAL END -->
-            <!-- NAV MENU START -->
-            <div class="navMenu">
-                <div id="home"><a href="userInterface.html" id="loggedLink">Home</a></div>
-                <div id="logged" class="btn"><a id="yourCars" href="yourCars.html"></a></div>
-                <div id="logout" class="btn">Log out</div>
-            </div>
-            <!-- NAV MENU END -->
-        </header>
-
-    </div>
+      <header id="header">
+        <!-- LOGO START -->
+        <div class="logo">
+          <img src="img/banner.png" alt="Logo failed to load" />
+        </div>
+        <!-- LOGO END -->
+        <!-- SOCIAL START -->
+        <div class="socialNetworks">
+          <img src="img/youtube.png" alt="Social" />
+          <img src="img/instagram.png" alt="Social" />
+          <img src="img/twitter.png" alt="Social" />
+          <img src="img/facebook.png" alt="Social" />
+        </div>
+        <!-- SOCIAL END -->
+        <!-- NAV MENU START -->
+        <div class="navMenu">
+          <div id="home">
+            <a href="userInterface.html" id="loggedLink">Home</a>
+          </div>
+          <div id="logged" class="btn">
+            <a id="yourCars" href="yourCars.html"></a>
+          </div>
+          <div id="logout" class="btn">Log out</div>
+        </div>
+        <!-- NAV MENU END -->
+      </header>
     </div>
     <!-- Inserting a new car -->
     <div class="insert-car-form">
+      <div class="insert-car-div">
+        <label>Insert car brand</label><br />
+        <input type="text" id="car-brand-input" />
+      </div>
 
-        <div class="insert-car-div">
-            <label>Insert car brand</label><br>
-            <input type="text" id="car-brand-input">
-        </div>
+      <div class="insert-car-div">
+        <label>Insert car creation year</label><br />
+        <input type="number" id="car-year-input" />
+      </div>
 
-        <div class="insert-car-div">
-            <label>Insert car creation year</label><br>
-            <input type="number" id="car-year-input">
-        </div>
+      <div class="insert-car-div">
+        <label>Insert car image url</label><br />
+        <input type="text" id="car-url-input" />
+      </div>
 
-        <div class="insert-car-div">
-            <label>Insert car image url</label><br>
-            <input type="text" id="car-url-input">
-        </div>
-
-        <button id="car-button" onclick="insertCar()">Insert car</button>
-
+      <button id="car-button" onclick="insertCar()">Insert car</button>
     </div>
     <!-- Inserting a new car END -->
 
     <script src="./script/addYourCar.js"></script>
     <script src="./script/userInterface.js"></script>
+    <script
+      src="https://kit.fontawesome.com/632bba6311.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script/main.js"></script>
-</body>
-
+  </body>
 </html>

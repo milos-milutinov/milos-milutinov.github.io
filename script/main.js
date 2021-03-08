@@ -233,7 +233,6 @@ function loginFormElementOnResetEvent() {
   if (!odgovor) {
     return false;
   }
-  localStorage.removeItem("currentUSER");
   window.location.reload();
 }
 

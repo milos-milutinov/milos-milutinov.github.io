@@ -21,6 +21,14 @@ body {
   overflow: hidden;
 }
 
+#backToTop {
+  font-size: 3em;
+  color: #ffc400;
+  position: fixed;
+  bottom: 0.5em;
+  right: 1em;
+}
+
 /* HEADER start */
 
 #header {
@@ -324,5 +332,12 @@ body {
     border-radius: 1em;
     max-width: 50vw;
     max-height: 15em;
+  }
+  #backToTop {
+    font-size: 2em;
+    color: #ffc400;
+    position: fixed;
+    bottom: 0.5em;
+    right: 1em;
   }
 }
