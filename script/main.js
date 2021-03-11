@@ -16,13 +16,6 @@ function main() {
   //retrieve all html elements that we will use
   getAllElements();
   setElementEvents();
-  /* if (logged_in !== null && logged_in.user_name !== null) {
-    register.setAttribute("class", "btn-delete");
-    login.setAttribute("class", "btn-delete");
-    loggedIN.setAttribute("class", "btn");
-    loggedIN.textContent = logged_in.user_name;
-    loggedOUT.setAttribute("class", "btn");
-  } */
   preventFormsFromReloading();
 }
 
@@ -114,13 +107,8 @@ function registerOnSubmitEvent() {
     return;
   }
 
-  if (user_name === "") {
-    error.textContent = "You must enter a username";
-    return;
-  }
-
-  if (email === "") {
-    error.textContent = "You did not enter your email";
+  if (!stringContainsUpperCase(name)) {
+    error.textContent = "Your name must contain upper case letters";
     return;
   }
 
@@ -129,18 +117,23 @@ function registerOnSubmitEvent() {
     return;
   }
 
-  if (!stringContainsUpperCase(name)) {
-    error.textContent = "Your name must contain upper case letters";
-    return;
-  }
-
   if (stringContainsSpecialCharacter(name) || stringContainsANumber(name)) {
     error.textContent = "Your name must contain only letters";
     return;
   }
 
+  if (email === "") {
+    error.textContent = "You did not enter your email";
+    return;
+  }
+
   if (!emailIsValid(email)) {
     error.textContent = "Email is not valid";
+    return;
+  }
+
+  if (user_name === "") {
+    error.textContent = "You must enter a username";
     return;
   }
 

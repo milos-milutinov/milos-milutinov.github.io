@@ -1,4 +1,4 @@
-/* funkcija koja kreira div sa potrebnim podacima */
+/* function that creates div with data needed */
 
 var getCurrentWrapper = document.getElementById("wrapper");
 var allCars = document.getElementById("allCars");

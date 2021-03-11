@@ -149,7 +149,7 @@ body {
   margin: 2em 0;
 }
 
-#filterYear {
+#deleteCar {
   border: none;
   background-color: red;
   color: #ffffff;
@@ -204,7 +204,7 @@ body {
   padding: 0.1em;
 }
 
-/* Contact info */
+/* Contact info END */
 
 /* RESPONSIVE */
 
